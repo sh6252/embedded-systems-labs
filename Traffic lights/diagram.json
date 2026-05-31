@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "author": "Student 2",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+
+    { "type": "wokwi-led", "id": "led1", "top": 44.4, "left": -63.4, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 121.2,
+      "left": -63.4,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": 82.8,
+      "left": -63.4,
+      "attrs": { "color": "orange", "lightColor":"#F4F500" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led4",
+      "top": 121.2,
+      "left": 205.4,
+      "attrs": { "color": "#80f070", "flip": "" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led5",
+      "top": 82.8,
+      "left": 205.8,
+      "attrs": { "color": "red", "flip": "" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn1",
+      "top": 240.5,
+      "left": 195.5,
+      "rotate": 90,
+      "attrs": { "color": "#dec490", "xray": "1", "bounce": "1" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "instructions",
+      "top": 268.8,
+      "left": 124.8,
+      "attrs": { "text": "Press the button to speed up the traffic light." }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "led2:C", "esp:GND.2", "green", [ "h-114.8", "v-172.8", "h268.8" ] ],
+    [ "led3:C", "esp:GND.2", "orange", [ "h-95.6", "v-144", "h249.6" ] ],
+    [ "led1:C", "esp:GND.2", "red", [ "h-76.4", "v-115.2", "h230.4" ] ],
+    [ "led1:A", "esp:32", "red", [ "h19.2", "v38.4" ] ],
+    [ "led3:A", "esp:33", "orange", [ "h9.6", "v9.6" ] ],
+    [ "led2:A", "esp:25", "green", [ "h19.2", "v-19.2" ] ],
+    [ "led5:C", "esp:GND.2", "red", [ "h-18.8", "v-57.6", "h-96" ] ],
+    [ "led4:C", "esp:GND.2", "green", [ "v19.2", "h106", "v-124.8", "h-220.8" ] ],
+    [ "led5:A", "esp:19", "red", [ "h-76.8", "v67.2" ] ],
+    [ "led4:A", "esp:18", "green", [ "h-67.2", "v28.8" ] ],
+    [ "btn1:2.l", "esp:17", "#dec4ba", [ "h-58", "v-76.8" ] ],
+    [ "btn1:1.l", "esp:GND.2", "#dec4ba", [ "h124.8", "v-192", "h-240" ] ]
+  ],
+  "dependencies": {}
+}

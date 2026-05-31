@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "author": "Student 2",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 230.22, "left": -33.83, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": 221.1,
+      "left": 225,
+      "attrs": { "humidity": "22.5", "temperature": "20" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": 68.7,
+      "left": 91.9,
+      "attrs": { "distance": "40" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 130.8, "left": 42.2, "attrs": { "color": "red" } }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "ultrasonic1:VCC", "esp:5V", "red", [ "v297.6", "h-192", "v-48" ] ],
+    [ "ultrasonic1:GND", "esp:GND.1", "black", [ "v307.2", "h-231.6", "v-48" ] ],
+    [ "ultrasonic1:TRIG", "esp:20", "green", [ "v0" ] ],
+    [ "led1:C", "esp:GND.2", "green", [ "v0" ] ],
+    [ "dht1:VCC", "esp:5V", "red", [ "v163.2", "h-278.4", "v-48" ] ],
+    [ "dht1:GND", "esp:GND.1", "black", [ "v172.8", "h-316.8", "v-48", "h28.8" ] ],
+    [ "dht1:SDA", "esp:21", "green", [ "v0" ] ],
+    [ "led1:A", "esp:18", "green", [ "v0" ] ],
+    [ "ultrasonic1:TRIG", "esp:4", "green", [ "v0" ] ],
+    [ "ultrasonic1:ECHO", "esp:16", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

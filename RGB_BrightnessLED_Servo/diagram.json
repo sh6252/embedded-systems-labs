@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "author": "Student 2",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": { "env": "micropython-20231227-v1.22.0", "flashSize": "8" }
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb",
+      "top": -120,
+      "left": 220,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 121.2,
+      "left": -543.4,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-membrane-keypad",
+      "id": "keypad1",
+      "top": -280.4,
+      "left": -320.8,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": 167.45,
+      "left": -471.8,
+      "rotate": 180,
+      "attrs": { "value": "220" }
+    },
+    { "type": "wokwi-resistor", "id": "r1", "top": -70, "left": 150, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r2", "top": -30, "left": 150, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r3", "top": 10, "left": 150, "attrs": { "value": "220" } },
+    { "type": "wokwi-servo", "id": "servo1", "top": 142, "left": 240, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:GPIO4", "r1:1", "green", [] ],
+    [ "r1:2", "rgb:R", "green", [] ],
+    [ "esp:GPIO5", "r2:1", "green", [] ],
+    [ "r2:2", "rgb:G", "green", [] ],
+    [ "esp:GPIO6", "r3:1", "green", [] ],
+    [ "r3:2", "rgb:B", "green", [] ],
+    [ "rgb:COM", "esp:GND.1", "black", [] ],
+    [ "servo1:SIG", "esp:GPIO9", "orange", [] ],
+    [ "servo1:V+", "esp:5V", "red", [ "v9.7", "h-67.2", "v9.78" ] ],
+    [ "servo1:GND", "esp:GND.2", "black", [] ],
+    [ "r1:1", "esp:4", "green", [ "v-12.45", "h-159.6", "v134.4" ] ],
+    [ "r2:1", "esp:5", "green", [ "v-71.65", "h-169.2", "v163.2" ] ],
+    [ "r3:1", "esp:6", "green", [ "v-121.25", "h-178.8", "v182.4" ] ],
+    [ "led1:A", "r4:2", "green", [ "v0" ] ],
+    [ "r4:1", "esp:10", "green", [ "h0", "v28.8" ] ],
+    [ "led1:C", "esp:GND.1", "green", [ "v0" ] ],
+    [ "keypad1:R1", "esp:13", "green", [ "v163.2" ] ],
+    [ "keypad1:R2", "esp:12", "green", [ "v134.4", "h-0.4" ] ],
+    [ "keypad1:R3", "esp:11", "green", [ "v0" ] ],
+    [ "keypad1:R4", "esp:8", "green", [ "v0" ] ],
+    [ "keypad1:C1", "esp:18", "green", [ "v0" ] ],
+    [ "keypad1:C2", "esp:17", "green", [ "v0" ] ],
+    [ "keypad1:C3", "esp:16", "green", [ "v0" ] ],
+    [ "keypad1:C4", "esp:15", "green", [ "v0" ] ],
+    [ "servo1:PWM", "esp:14", "green", [ "h-124.8", "v67.4", "h-124.8", "v-67.2" ] ]
+  ],
+  "dependencies": {}
+}
