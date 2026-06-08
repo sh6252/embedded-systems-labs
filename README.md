@@ -4,13 +4,14 @@ Welcome to a playful little collection of embedded systems projects made for lea
 
 This repository is like a tiny lab full of ESP32 and MicroPython experiments. Each folder is a separate project that teaches a different hardware trick:
 
-- `DHT22_Project`: temperature and humidity sensing with warning lights
-- `FreeRTOS_Queues`: task communication using queues and a button-controlled LED
-- `RGB_BrightnessLED_Servo`: colorful RGB and servo control with a keypad interface
-- `Smart_Robot_Status_Monitor`: environment and distance monitoring for a small robot
 - `Traffic lights`: a cute traffic signal simulation using FreeRTOS
 - `UART`: serial and UART examples for talking to the board and loopback testing
 - `connect_to_wifi`: WiFi connection examples with a switch-controlled LED and an ultrasonic distance sensor
+- `RGB, Brightness LED & Servo`: colorful RGB and servo control with a keypad interface
+- `Smart Robot Status Monitor`: environment and distance monitoring for a small robot
+- `FreeRTOS Queues`: task communication using queues and a button-controlled LED
+- `UART communication`: serial and UART examples for talking to the board and loopback testing
+- `DHT22 sensor`: temperature and humidity sensing with warning lights
 
 ## What you can learn here
 
