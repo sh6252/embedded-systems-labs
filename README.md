@@ -11,6 +11,7 @@ This repository is like a tiny lab full of ESP32 and MicroPython experiments. Ea
 - `UART communication`: serial and UART examples for talking to the board and loopback testing
 - `DHT22 sensor`: temperature and humidity sensing with warning lights
 - `connect_to_wifi`: WiFi connection examples with a switch-controlled LED and an ultrasonic distance sensor
+- `BLE`: Bluetooth Low Energy example for ESP32 device connection and data exchange
 
 ## What you can learn here
 
