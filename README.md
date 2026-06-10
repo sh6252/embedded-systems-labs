@@ -10,8 +10,9 @@ This repository is like a tiny lab full of ESP32 and MicroPython experiments. Ea
 - `FreeRTOS Queues`: task communication using queues and a button-controlled LED
 - `UART communication`: serial and UART examples for talking to the board and loopback testing
 - `DHT22 sensor`: temperature and humidity sensing with warning lights
-- `connect_to_wifi`: WiFi connection examples with a switch-controlled LED and an ultrasonic distance sensor
+- `connect_to_wifi-arduino_IoT_cloud`: Advanced WiFi projects using Arduino IoT Cloud with real-time dashboards and remote control
 - `BLE`: Bluetooth Low Energy example for ESP32 device connection and data exchange
+- `wifi_http`: WiFi HTTP communication with weather API requests and distance sensor reporting to remote servers
 
 ## What you can learn here
 
