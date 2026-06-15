@@ -63,7 +63,7 @@ A smart plant monitor that reads temperature and humidity from a DHT22 sensor, s
 ## Dashboard Screenshot / Link
 
 - Screenshot file: `mini_project/Dashboard.png`
-- Live Arduino Cloud dashboard link: `[Plant Monitor Dashboard](https://app.arduino.cc/dashboards/afeb53c8-fe97-4621-8fa7-a72edb72a43e?page=6b95caa4-43bf-48a1-bd1e-b6a32febe0ab&mode=view)`
+- Live Arduino Cloud dashboard link: [Plant Monitor Dashboard](https://app.arduino.cc/dashboards/afeb53c8-fe97-4621-8fa7-a72edb72a43e?page=6b95caa4-43bf-48a1-bd1e-b6a32febe0ab&mode=view)
 
 ## Notes
 
