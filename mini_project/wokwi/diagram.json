@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "author": "Student 2",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -59.26, "left": -92.3, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -191.7,
+      "left": -34.2,
+      "attrs": { "temperature": "1.9" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -154.9, "left": -269, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "greenLed",
+      "top": -32.4,
+      "left": 167,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "redLed",
+      "top": -32.4,
+      "left": 205.4,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 70.6,
+      "left": 162.35,
+      "rotate": 270,
+      "attrs": { "value": "150" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 80.2,
+      "left": 200.75,
+      "rotate": 270,
+      "attrs": { "value": "150" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": -82.45,
+      "left": -96,
+      "attrs": { "value": "10000" }
+    }
+  ],
+  "connections": [
+    [ "esp:4", "dht1:SDA", "green", [ "h10.74", "v-161.54" ] ],
+    [ "esp:15", "r2:1", "red", [ "v1.66", "h221.94" ] ],
+    [ "r2:2", "redLed:A", "red", [] ],
+    [ "redLed:C", "esp:GND.4", "black", [] ],
+    [ "esp:GND.3", "redLed:C", "black", [ "h39.54", "v1.66", "h153.6", "h18.8" ] ],
+    [ "greenLed:A", "r1:2", "green", [ "v9.6" ] ],
+    [ "dht1:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "pot1:SIG", "esp:34", "green", [ "v0" ] ],
+    [ "pot1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "pot1:GND", "esp:GND.2", "black", [ "v19.2", "h-38.4", "v-134.4", "h307.2", "v171.14" ] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v9.6", "h-67.2" ] ],
+    [ "greenLed:C", "esp:GND.3", "green", [ "v19.2", "h-114.8", "v-1.66" ] ],
+    [ "r1:1", "esp:2", "green", [ "h0" ] ],
+    [ "dht1:SDA", "r3:2", "green", [ "v0" ] ],
+    [ "r3:1", "esp:3V3", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
