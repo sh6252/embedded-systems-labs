@@ -1,37 +1,38 @@
 # Embedded Systems Labs 🔧
 
-Welcome to a playful little collection of embedded systems projects made for learning, experimenting, and having fun with microcontrollers.
+A collection of embedded systems projects focusing on firmware, hardware interfacing, and applied microcontroller development.
 
-This repository is like a tiny lab full of ESP32 and MicroPython experiments. Each folder is a separate project that teaches a different hardware trick:
+Each folder contains an individual lab that demonstrates a specific embedded systems concept, including I/O control, sensor integration, communication protocols, and real-world robotics applications.
 
-- `Traffic lights`: a cute traffic signal simulation using FreeRTOS
-- `RGB, Brightness LED & Servo`: colorful RGB and servo control with a keypad interface
-- `Smart Robot Status Monitor`: environment and distance monitoring for a small robot
-- `FreeRTOS Queues`: task communication using queues and a button-controlled LED
+- `Traffic lights`: traffic signal sequencing using FreeRTOS and task scheduling.
+- `RGB, Brightness LED & Servo`: RGB LED control, brightness adjustment, and servo motion with a keypad interface.
+- `Smart Robot Status Monitor`: environmental and distance monitoring for a compact robot platform.
+- `FreeRTOS Queues`: inter-task communication with queues and button-controlled LED signaling.
 - `UART communication`: serial and UART examples for talking to the board and loopback testing
-- `DHT22 sensor`: temperature and humidity sensing with warning lights
-- `connect_to_wifi-arduino_IoT_cloud`: Advanced WiFi projects using Arduino IoT Cloud with real-time dashboards and remote control
-- `BLE`: Bluetooth Low Energy example for ESP32 device connection and data exchange
-- `wifi_http`: WiFi HTTP communication with weather API requests and distance sensor reporting to remote servers
-- ` Mini Project - Smart Plant Monitor`: Smart Plant Monitor with DHT22, soil moisture simulation, Arduino Cloud dashboard, BLE advertising, and FreeRTOS task structure
-- `hexLeg`: Single hexapod leg control on Raspberry Pi with PCA9685 and keyboard-driven poses
+- `DHT22 sensor`: temperature and humidity sensing with warning indicators.
+- `connect_to_wifi-arduino_IoT_cloud`: Arduino IoT Cloud integration for remote telemetry and device control.
+- `BLE`: Bluetooth Low Energy communication on ESP32.
+- `wifi_http`: WiFi HTTP client examples for weather API requests and remote reporting.
+- `raspberryPI-gpio`: Raspberry Pi GPIO example for LED blink control using `gpiozero`.
+- `pca9685`: PCA9685 servo control examples with Adafruit ServoKit.
+- `hexLeg`: single-leg hexapod control using Raspberry Pi, PCA9685, and servo pose management.
 - `UART Serial Bridge`: Raspberry Pi to ESP32 UART Serial Bridge examples for text and angle data exchange
 
-## What you can learn here
+## Learning Outcomes
 
-- How to read sensors and print useful data
-- How to control LEDs, buttons, and servos
-- How to use FreeRTOS tasks, queues, and mutexes
-- How to use UART/Serial communication
-- How to build small interactive hardware demos
+- Embedded hardware interfacing with GPIO, PWM, I2C, and UART.
+- Firmware design patterns for sensor monitoring and actuator control.
+- Real-time task coordination using FreeRTOS.
+- Serial communication and protocol parsing.
+- Modular project structure for rapid hardware experimentation.
 
-## How to use this repo
+## Repository Usage
 
-1. Open the project folder you want to explore.
-2. Load it in PlatformIO or MicroPython, depending on the example.
-3. Upload it to your board and open the serial monitor.
-4. Watch the hardware come to life with LEDs, sensors, and buttons.
+1. Select the project folder corresponding to the lab you want to run.
+2. Review the included source files and hardware requirements.
+3. Deploy the code to the target board using PlatformIO, Arduino, or native Python as appropriate.
+4. Use the serial monitor, terminal, or connected hardware to observe and verify behavior.
 
-## Why it is cute
+## About This Repository
 
-Because it turns wires and code into tiny robot helpers, blinking lights, and friendly status monitors. It is perfect for anyone who wants to learn embedded systems with a smile.
+This repository is intended for hands-on embedded systems learning and prototyping. It is organized by session and emphasizes repeatable lab exercises for common microcontroller interfaces and communication methods.
