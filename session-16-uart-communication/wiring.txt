@@ -1,0 +1,13 @@
+UART Wiring
+
+Raspberry Pi 3B <-> ESP32-C5
+
+RPi GPIO14 (TXD0)  -> ESP32 GPIO4 (RX)
+RPi GPIO15 (RXD0)  <- ESP32 GPIO5 (TX)
+RPi GND            -> ESP32 GND
+
+UART Settings:
+Baud Rate : 115200
+Data Bits : 8
+Parity    : None
+Stop Bits : 1 (8N1)
