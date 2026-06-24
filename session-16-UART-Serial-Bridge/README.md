@@ -1,4 +1,4 @@
-# Session 16 - UART Communication
+# Session 16 - UART Serial Bridge
 
 Raspberry Pi to ESP32 UART communication examples for text and angle data transmission.
 
