@@ -14,8 +14,7 @@ This repository is like a tiny lab full of ESP32 and MicroPython experiments. Ea
 - `BLE`: Bluetooth Low Energy example for ESP32 device connection and data exchange
 - `wifi_http`: WiFi HTTP communication with weather API requests and distance sensor reporting to remote servers
 - ` Mini Project - Smart Plant Monitor`: Smart Plant Monitor with DHT22, soil moisture simulation, Arduino Cloud dashboard, BLE advertising, and FreeRTOS task structure
-- `raspberryPI-gpio`: Raspberry Pi GPIO LED blink example using `gpiozero`
-- `pca9685`: Raspberry Pi PCA9685 servo control examples with Adafruit ServoKit
+- `hexLeg`: Single hexapod leg control on Raspberry Pi with PCA9685 and keyboard-driven poses
 
 ## What you can learn here
 
