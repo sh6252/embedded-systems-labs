@@ -17,6 +17,7 @@ Each folder contains an individual lab that demonstrates a specific embedded sys
 - `pca9685`: PCA9685 servo control examples with Adafruit ServoKit.
 - `hexLeg`: single-leg hexapod control using Raspberry Pi, PCA9685, and servo pose management.
 - `UART Serial Bridge`: Raspberry Pi to ESP32 UART Serial Bridge examples for text and angle data exchange
+- `angle-protocol`: JSON-based UART protocol between Raspberry Pi and ESP32 for remote hexapod servo control with FreeRTOS and PCA9685.
 
 ## Learning Outcomes
 
